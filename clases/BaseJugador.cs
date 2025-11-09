@@ -4,7 +4,7 @@ using BlackJack_Uno.Interfaces;
 
 namespace BlackJack_Uno.clases
 {
-    public abstract class BaseJugador
+     abstract class BaseJugador
     {
         public string TipoJugador { get; private set; }
          public Mano Mano { get;  set; }
@@ -13,4 +13,8 @@ namespace BlackJack_Uno.clases
         {
             TipoJugador = tipoJugador;
             Mano = new Mano();
+        }
+
+        
+    }
 }
