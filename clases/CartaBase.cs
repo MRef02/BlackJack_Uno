@@ -14,11 +14,9 @@ abstract class CartaBase
     protected Colores _color;
     public abstract Colores Color { get; set; }
 
-    protected string _figura = "";
-    public abstract string Figura { get; set; }
-    protected CartaBase(Colores colorCarta, string figuraCarta)
+    public CartaBase(int valorCarta,Colores colorCarta)
     {
+        Valor = valorCarta;
         Color = colorCarta;
-        Figura = figuraCarta;
     }
 }
