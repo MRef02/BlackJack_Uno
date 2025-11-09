@@ -9,7 +9,7 @@ namespace BlackJack_Uno.clases
         public string TipoJugador { get; private set; }
          public Mano Mano { get;  set; }
 
-        protected BaseJugador(string tipoJugador)
+        public BaseJugador(string tipoJugador)
         {
             TipoJugador = tipoJugador;
             Mano = new Mano();
